@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link href="/src/output.css" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
 </head>
 
 <body class="bg-gray-200">
@@ -41,41 +41,45 @@
     <section>
         <div class="contain pt-10 relative">
             <div>
-                <h2 class="font-funnel">Portfolio (A Modern & Interactive Portfolio Landing Page)</h2>
+                <h2 class="font-funnel">Blogging Platform (A Scalable Blogging Platform API)</h2>
             </div>
             <div class="pt-5">
                 <h3 class="text-2xl font-semibold font-funnel">Overview</h3>
             </div>
             <div class="pt-2">
                 <p class="">
-                    <strong>Portfolio</strong> is a sleek and responsive personal portfolio landing page designed to showcase skills, projects, and
-                    achievements in an engaging and visually appealing manner. Built with modern web technologies, it features smooth
-                    animations, an intuitive user experience, and a dark mode toggle for enhanced accessibility.
+                    <strong>EMK-Blog API</strong> is a powerful and well-structured <strong>RESTful API</strong> designed for modern blogging platforms. 
+                    Built using <strong>Django REST Framework (DRF)</strong>, it provides secure authentication, efficient content management, 
+                    and role-based access control.The API ensures seamless interaction between frontend applications and backend services, 
+                    enabling users to create, manage, and engage with blog posts dynamically.
                 </p>
             </div>
             <div class="pt-10">
                 <h3 class="text-2xl font-semibold font-funnel">Tech Stack</h3>
             </div>
             <div class="pt-2 list-disc list-inside space-y-1">
-                <div><strong>Frontend</strong> – Tailwind CSS, Html and JavaScript</div>
-                <div><strong>Hosting</strong> – AWS</div>
+                <div><strong>Backend</strong> – Django, Django REST Framework (DRF), PostgreSQL</div>
+                <div><strong>Authentication</strong> – JWT Authentication</div>
+                <div><strong>API Standards:</strong> – RESTful API design</div>
+                <div><strong>Hosting & Deployment</strong> – Heroku</div>
             </div>
             <div class="pt-10">
                 <h3 class="text-2xl font-semibold font-funnel">Key Features</h3>
             </div>
             <div class="pt-2 list-disc list-inside space-y-1">
-                <div><strong>Responsive Design</strong> – Ensures a seamless user experience across all devices.</div>
-                <div><strong>Smooth Animations & Transitions</strong> – Integrated Framer Motion for fluid interactions.</div>
-                <div><strong>Dark Mode Integration</strong> – Users can toggle between light and dark themes.</div>
-                <div><strong>Intuitive Navigation</strong> –Well-structured layout with easy access to different sections.</div>
+                <div><strong>JWT Authentication</strong> – Secure user authentication using JSON Web Tokens (JWT).</div>
+                <div><strong>Post Management</strong> – Users can create, update, delete, and retrieve blog posts.</div>
+                <div><strong>Comment System Management</strong> – Users can engage through a structured comment system.</div>
+                <div><strong>Role-Based Access Control (RBAC)</strong> – Assigns permissions based on user roles (admin, editor, author, reader).</div>
+                <div><strong>RESTful API Design</strong> – Follows best practices for scalable and maintainable API architecture.</div>
             </div>
             <div class="pt-10">
                 <h3 class="text-2xl font-semibold font-funnel">Challenges & Solutions</h3>
             </div>
             <div class="pt-2 list-disc list-inside">
-                <div><strong>Performance Optimization – </strong>Minimized animations for better load speed without sacrificing UI quality.</div>
-                <div><strong>Dark Mode Implementation – </strong>Used Tailwind’s dark mode support for effortless theme switching.</div>
-                <div><strong>Ensuring Accessibility – </strong>Applied proper color contrasts and keyboard navigation for usability.</div>
+                <div><strong>Ensuring Secure Access – </strong>Implemented JWT authentication and permission classes to restrict access.</div>
+                <div><strong>Optimizing API Performance – </strong>Used query optimizations and caching for faster response times.</div>
+                <div><strong>Managing User Roles Efficiently – </strong> Integrated Django’s built-in permissions system for role-based access control.</div>
             </div>
             <div class="pt-10">
                 <h3 class="text-2xl font-semibold font-funnel">Links</h3>
@@ -83,7 +87,7 @@
             <div class="pt-2">
                 <a href="#github" 
                 class="bluebutton2 inline-block bg-blue-300 py-2 px-4 rounded-lg 
-                shadow-md hover:bg-blue-500/70 hover:-translate-y-1 transition 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition 
                 duration-300 font-semibold">
                 GitHub Repository
                 </a>
@@ -93,7 +97,7 @@
                 class="bluebutton inline-block border-2 border-blue-300 py-2 px-4 rounded-lg 
                 shadow-md hover:bg-blue-300 hover:-translate-y-1 transition
                 duration-300 font-semibold">
-                Live Demo
+                API Documentation
                 </a>
             </div>
 
@@ -116,13 +120,13 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-----------------------------scroll reveal js---------------------->
-    <script src="/src/scrollreveal.min.js"></script>
+    <script src="scrollreveal.min.js"></script>
 
     <!-----------------------------main.js---------------------->
-    <script src="/src/core.js"></script>
+    <script src="core.js"></script>
 
     <!-----------------------------main.js---------------------->
-    <script src="/src/main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
