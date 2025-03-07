@@ -1,0 +1,603 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+        bg-cover bg-center opacity-20 inset-0">
+    </div>
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+    bg-cover bg-center opacity-30 inset-0 rotate-180">
+    </div>
+    <div id="take"
+    class="fixed bottom-[-100%] right-10 w-8 h-8 cursor-pointer
+     z-50 rounded-md text-2xl font-bold bg-transparent 
+     hover:bg-blue-400/70 transform duration-300 hover:-translate-y-1">
+        <a href="#" class="w-full h-full flex items-center justify-center">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
+<!--------------------------------header---------------->
+<header id="header" class="fixed top-0 w-full h-[70px] bg-gray-200 z-50">
+    <div class="contain">
+        <div class="w-full h-[70px] flex justify-between items-center">
+            <div class="lg:pr-8">
+                <h3 class="uppercase font-semibold font-play">Portfolio</h3>
+            </div>
+            <div id="nav-bar" class="navbar absolute top-0 left-[-100%] w-full min-h-screen
+            lg:static lg:min-h-[70px] lg:justify-end flex items-center justify-center 
+            lg:bg-transparent bg-gray-200/30 lg:backdrop-blur-none backdrop-blur-sm">
+                <ul class="relative flex flex-col items-center justify-center lg:flex-row 
+                lg:gap-[20px] sm:gap-[30px] font-semibold font-lobster nav">
+                    <li><a href="#home" class="nav-link py-[8px] px-[10px] active">Home</a></li>
+                    <li><a href="#about" class="nav-link py-[8px] px-[10px]">About</a></li>
+                    <li><a href="#projects" class="nav-link py-[8px] px-[10px]">Projects</a></li>
+                    <li><a href="#skills" class="nav-link py-[8px] px-[10px]">Skills</a></li>
+                    <li><a href="#review" class="nav-link py-[8px] px-[10px]">Review</a></li>
+                    <li><a href="#contact" class="nav-link py-[8px] px-[10px]">Contact</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-5 items-center">
+                <div class="text-xl lg:pl-5">
+                    <i id="dark" class="ri-moon-fill cursor-pointer"></i>
+                </div>
+                <div class="lg:hidden text-xl font-semibold z-50">
+                    <i id="menu" class="ri-menu-4-line cursor-pointer"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-----------------------------home---------------------->
+  <section id="home" class="overflow-y-hidden overflow-x-hidden">
+
+    <div class="contain relative flex flex-col lg:flex-row gap-5 lg:gap-5 items-center justify-center lg:justify-around">
+        <div class="lg:w-1/2 z-10 home">
+            <div class="pt-8 lg: pt-12">
+                <h1 class="font-funnel font-bold uppercase">Chukwuemeka
+                    <br>
+                    Ezugwu
+                </h1>
+            </div>
+            <div class="flex flex-col gap-5 pt-8 text-lg">
+                <div class="flex gap-2">
+                    <div class="blue w-6 h-2 mt-[10.5px] bg-blue-300"></div> 
+                    <div class="w-full text-justify">I build modern, user-friendly web applications.</div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="blue w-6 h-2 mt-[10.5px] bg-blue-300"></div>
+                    <div class="w-full text-justify">Specializing in backend systems, REST APIs, and frontend design.</div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="blue w-6 h-2 mt-[10.5px] bg-blue-300"></div>
+                    <div class="w-full text-justify">Passionate about optimizing performance and scalability.</div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-5 justify-around pt-8">
+                <div class="text-lg font-medium font-jost underline">Full-Stack Developer</div>
+                <div class="text-lg font-medium font-jost hover:underline cursor-pointer">gezugwu1@gmail.com</div>
+                <div class="text-lg font-medium font-jost">
+                    <button class="bluebutton border-2 border-blue-300 rounded-md p-1 transform
+                                    hover:bg-blue-300 hover:-translate-y-1 duration-300">
+                        <h4>Download CV</h4>
+                    </button>
+                </div>
+            </div>
+            <div class="py-8">
+                <div class="font-lobster py-2">connect with me</div>
+                <div class="flex gap-8">
+                    <div><a href="#twitter"><i class="text-lg lg:text-xl hover:text-blue-500 ri-twitter-x-line"></i></a></div>
+                    <div><a href="#github"><i class="text-lg lg:text-xl hover:text-blue-500 ri-github-fill"></i></a></i></div>
+                    <div><a href="#linkedin"><i class="text-lg lg:text-xl hover:text-blue-500 ri-linkedin-fill"></i></a></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-1/2 h-auto flex items-center justify-center">
+            <div class="relative">
+                <div class="">
+                    <img src="/assets/img/home.png" alt=""
+                    class="home__image w-[350px] max-w-none">
+                </div>
+                <div class="absolute -top-5 left-5 animate-movingY">
+                    <i class="bluehover ri-code-s-slash-line text-5xl font-bold text-blue-300/60"></i>
+                </div>
+                <div class="absolute -top-5 right-5 animate-scaleup">
+                    <i class="bluehover ri-flask-line text-5xl font-bold text-blue-300/60"></i>
+                </div>
+                <div class="absolute -bottom-10 right-1/2 animate-rotating">
+                    <i class="bluehover ri-bug-line text-5xl font-bold text-blue-300/60"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </section>
+
+<!-----------------------------about---------------------->
+  <section id="about" class="overflow-y-hidden overflow-x-hidden">
+    <div class="contain relative">
+        <div class="relative">
+            <div class="flex items-center gap-2 py-10">
+                <i class="bio__icon ri-user-fill text-4xl md:text-5xl lg:text-6xl"></i>
+                <h2 class="font-funnel uppercase ">Bio</h2>
+            </div>
+            <div class="about__img absolute top-20 right-0 w-[200px] 
+            md:w-[250px] lg:w-[300px]">
+                <img src="/assets/img/bio.png" alt="">
+            </div>
+        </div>
+        <div class="flex flex-col gap-10">
+            <div class="flex flex-col gap-12 md:gap-15 lg:gap-24">
+                <div class="pt-20 md:pt-28">
+                    <h2 class="font-semibold font-jost">
+                        WELCOME,
+                    </h2>
+                </div>
+                <div class="">
+                    <h4 class="text-justify">
+                        I'm Chukwuemeka Ezugwu, a versatile full-stack web developer. I build interactive platforms, business solutions, and
+                        static websites, ensuring efficiency, security, and a seamless user experience across diverse industries.
+                    </h4>
+                </div>
+            </div>
+            <div class="w-full">
+                <h4 class="text-justify">
+                    With expertise in responsive UI design, API development, SQL databases, and backend optimization, I create
+                    seamless,
+                    user-friendly web experiences that are both visually appealing and technically robust.
+                </h4>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-----------------------------projects---------------------->
+  <section id="projects" class="overflow-y-hidden overflow-x-hidden">
+    <div class="contain relative">
+        <div class="flex items-center gap-2 pb-10">
+            <i class="work__icon ri-briefcase-4-fill text-4xl md:text-5xl lg:text-6xl"></i>
+            <h2 class="font-funnel uppercase">My Work</h2>
+        </div>
+
+        <div class="px-5 md:px-16 lg:px-5 grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <!-------------------card1-------------------->
+            <div class="border-2 border__color border-gray-300 p-3 py-5 cursor-pointer">
+                <div>
+                    <h4 class="font-funnel font-semibold text-xl">
+                        Ecommerce Website
+                        <span class="font-lobster font-light">(EMK-Xpress)</span>
+                    </h4>
+                </div>
+                <div class="underline text-lg font-medium font-funnel pt-3">
+                    key features
+                </div>
+                <div class="space-y-1">
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">User Authentication</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">User Roles & Permissions</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Product & Shopping Cart Management</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Secure Payment Integration</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Admin Dashboard</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Responsive Design</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-around py-4 z-50">
+                    <button class="bluebutton2 border-2 border-blue-300 px-2 rounded-md
+                    bg-blue-300 hover:bg-blue-300 hover:-translate-y-1
+                    transform duration-300 py-1">
+                        <a href="projects/ecommerce.html">Explore More</a>
+                    </button>
+                    <button class="bluebutton border-2 border-blue-300 px-2 py-1 rounded-md
+                    hover:bg-blue-300 hover:-translate-y-1 transform duration-300">
+                        <a href="#livedemo">GitHub</a>
+                    </button>
+                </div>
+            </div>
+            <!-------------------card2-------------------->
+            <div class="border-2 border__color border-gray-300 p-3 py-5 cursor-pointer">
+                <div>
+                    <h4 class="font-funnel font-semibold text-xl">
+                        Real Estate Platform
+                        <span class="font-lobster font-light">(littlestate)</span>
+                    </h4>
+                </div>
+                <div class="underline text-lg font-medium font-funnel pt-3">
+                    key features
+                </div>
+                <div class="space-y-1">
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">User Authentication</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">User Roles & Permissions</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Property Listings & Wishlist Management</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Secure Payment Integration</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Admin Dashboard</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Responsive Design</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-around py-4 z-50">
+                    <button class="bluebutton2 border-2 border-blue-300 px-2 rounded-md
+                                bg-blue-300 hover:bg-blue-300 hover:-translate-y-1
+                                transform duration-300 py-1">
+                        <a href="projects/realestate.html">Explore More</a>
+                    </button>
+                    <button class="bluebutton border-2 border-blue-300 px-2 py-1 rounded-md
+                                hover:bg-blue-300 hover:-translate-y-1 transform duration-300">
+                        <a href="#livedemo">GitHub</a>
+                    </button>
+                </div>
+            </div>
+            <!-------------------card3-------------------->
+            <div class="border-2 border__color border-gray-300 p-3 py-5 cursor-pointer">
+                <div>
+                    <h4 class="font-funnel font-semibold text-xl">
+                        API for a Blogging Platform
+                    </h4>
+                </div>
+                <div class="underline text-lg font-medium font-funnel pt-3">
+                    key features
+                </div>
+                <div class="space-y-1">
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">JWT Authentication</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Post Management</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Comment System Management</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Role-Based Access</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">RESTful API Design</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-around py-4 z-50">
+                    <button class="bluebutton2 border-2 border-blue-300 px-2 rounded-md
+                            bg-blue-300 hover:bg-blue-300 hover:-translate-y-1
+                            transform duration-300 py-1">
+                        <a href="projects/blogging.html">Explore More</a>
+                    </button>
+                    <button class="bluebutton border-2 border-blue-300 px-2 py-1 rounded-md
+                            hover:bg-blue-300 hover:-translate-y-1 transform duration-300">
+                        <a href="#livedemo">GitHub</a>
+                    </button>
+                </div>
+            </div>
+            <!-------------------card4-------------------->
+            <div class="border-2 border__color border-gray-300 p-3 py-5 cursor-pointer">
+                <div>
+                    <h4 class="font-funnel font-semibold text-xl">
+                        Portfolio Landing Page
+                    </h4>
+                </div>
+                <div class="underline text-lg font-medium font-funnel pt-3">
+                    key features
+                </div>
+                <div class="space-y-1">
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Responsive Design</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Smooth Animations & Transitions</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Dark Mode Integration</div>
+                    </div>
+                    <div class="flex gap-2">
+                        <div class="blue w-4 h-2 mt-[9.4px] bg-blue-300"></div>
+                        <div class="w-full">Intuitive Navigation</div>
+                    </div>
+                </div>
+                <div class="w-full flex justify-around py-4 z-50">
+                    <button class="bluebutton2 border-2 border-blue-300 px-2 rounded-md
+                            bg-blue-300 hover:bg-blue-300 hover:-translate-y-1
+                            transform duration-300 py-1">
+                        <a href="projects/portflio.html">Explore More</a>
+                    </button>
+                    <button class="bluebutton border-2 border-blue-300 px-2 py-1 rounded-md
+                            hover:bg-blue-300 hover:-translate-y-1 transform duration-300">
+                        <a href="#livedemo">GitHub</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-----------------------------skills---------------------->
+  <section id="skills" class="overflow-y-hidden overflow-x-hidden">
+    <div class="contain relative">
+        <div class="flex items-center gap-2 mb-10">
+            <i class="skill__icon ri-tools-fill text-4xl md:text-5xl lg:text-6xl"></i>
+            <h2 class="font-funnel uppercase">Technical Skills</h2>
+        </div>
+        <div class="skill__data grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-6 p-6">
+            <!-- Frontend Development -->
+            <div class="skill__bar border__color rounded-md p-6 border-2 border-gray-300 z-10
+            hover:bg-white hover:shadow-md transform duration-300 text-gray-700
+            hover:-translate-y-1">
+                <h3 class="text-xl font-semibold font-funnel text-blue-600 mb-3">Frontend Development (4+ years)</h3>
+                <ul class="space-y-2">
+                    <li>HTML, CSS, JavaScript</li>
+                    <li><strong>CSS Frameworks:</strong> Tailwind CSS, Bootstrap</li>
+                    <li><strong>Frontend Framework:</strong> React.js</li>
+                </ul>
+            </div>
+        
+            <!-- Backend Development -->
+            <div class="skill__bar border__color rounded-md p-6 border-2 border-gray-300 z-10
+            hover:bg-white hover:shadow-md transform duration-300 text-gray-700
+            hover:-translate-y-1">
+                <h3 class="text-xl font-semibold font-funnel text-green-600 mb-3">Backend Development (5+ years)</h3>
+                <ul class="space-y-2">
+                    <li>Python (Django)</li>
+                    <li><strong>Databases:</strong> PostgreSQL, MySQL, SQLite</li>
+                    <li><strong>API Development:</strong> Django REST Framework</li>
+                </ul>
+            </div>
+        
+            <!-- Authentication & Security -->
+            <div class="skill__bar border__color rounded-md p-6 border-2 border-gray-300 z-10
+            hover:bg-white hover:shadow-md transform duration-300 text-gray-700
+            hover:-translate-y-1">
+                <h3 class="text-xl font-semibold font-funnel text-red-600 mb-3">Authentication & Security (4+ years)</h3>
+                <ul class="space-y-2">
+                    <li>JWT Authentication</li>
+                    <li>OAuth Authentication</li>
+                </ul>
+            </div>
+        
+            <!-- Tools & Deployment -->
+            <div class="skill__bar border__color rounded-md p-6 border-2 border-gray-300 z-10
+            hover:bg-white hover:shadow-md transform duration-300 text-gray-700
+            hover:-translate-y-1">
+                <h3 class="text-xl font-semibold font-funnel text-purple-600 mb-3">Tools & Deployment</h3>
+                <ul class="space-y-2">
+                    <li><strong>Version Control:</strong> Git, GitHub</li>
+                    <li><strong>Deployment:</strong> Vercel, Netlify, Heroku, DigitalOcean</li>
+                    <li><strong>Cloud Services:</strong> AWS (Basics)</li>
+                </ul>
+            </div>
+        
+            <!-- Other Relevant Areas -->
+            <div class="skill__bar border__color rounded-md p-6 border-2 border-gray-300 z-10
+            hover:bg-white hover:shadow-md transform duration-300 text-gray-700
+            hover:-translate-y-1">
+                <h3 class="text-xl font-semibold text-yellow-600 mb-3">Other Relevant Areas</h3>
+                <ul class="space-y-2">
+                    <li>Responsive Design & UI/UX Principles</li>
+                    <li>RESTful APIs & Backend Optimization</li>
+                    <li>Data Analysis (Basics)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-----------------------------review---------------------->
+  <section id="review" class="overflow-y-hidden overflow-x-hidden">
+    <div class="contain overflow-hidden">
+        <div class="flex items-center gap-2 pb-10">
+            <i class="review__icon ri-star-half-fill text-4xl md:text-5xl lg:text-6xl"></i>
+            <h2 class="font-funnel uppercase">Review</h2>
+        </div>
+        <div class="swiper1">
+            <div class="swiper-wrapper">
+                <!---------card1--------->
+                <div class="swiper-slide border__color border-2 rounded-md border-gray-300 p-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-16 h-16 rounded-full bg-red-200"></div>
+                        <div>
+                            @godwin
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="py-5 text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </div>
+                        <div class="absolute top-0">
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div class="absolute bottom-0 right-0">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                </div>
+                <!---------card2--------->
+                <div class="swiper-slide border__color border-2 rounded-md border-gray-300 p-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-16 h-16 rounded-full bg-red-200"></div>
+                        <div>
+                            @godwin
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="py-5 text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                            dolore magna
+                            aliqua.
+                        </div>
+                        <div class="absolute top-0">
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div class="absolute bottom-0 right-0">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!---------card3--------->
+                <div class="swiper-slide border__color border-2 rounded-md border-gray-300 p-3">
+                    <div class="flex items-center gap-2">
+                        <div class="w-16 h-16 rounded-full bg-red-200"></div>
+                        <div>
+                            @godwin
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="py-5 text-justify">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+                            dolore magna
+                            aliqua.
+                        </div>
+                        <div class="absolute top-0">
+                            <i class="ri-double-quotes-l"></i>
+                        </div>
+                        <div class="absolute bottom-0 right-0">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+<!-----------------------------contact---------------------->
+<section id="contact" class="overflow-y-hidden overflow-x-hidden">
+    <div class="contain relative">
+        <div class="flex items-center gap-2 pb-10">
+            <i class="contact__icon ri-phone-fill text-4xl md:text-5xl lg:text-6xl"></i>
+            <h2 class="font-funnel uppercase">Get in touch</h2>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-10">
+            <div class="lg:w-1/2">
+                <div>
+                    <h3 class="font-jost font-medium pb-2">Let’s Build Something Amazing!</h3>
+                </div>
+                <div class="relative py-2">
+                    <p class="font-lobster pt-5 text-justify">
+                        I’m always excited to collaborate on new projects, whether it's a web app, eCommerce site, or something unique. Let’s
+                        discuss your ideas and make them a reality!
+                    </p>
+                    <div class="absolute top-0">
+                        <i class="ri-double-quotes-l"></i>
+                    </div>
+                    <div class="absolute -bottom-3 right-0">
+                        <i class="ri-double-quotes-r"></i>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <div class="font-lobster py-2">Email me</div>
+                    <div>
+                        <a href="#email" 
+                        class="hover:underline">
+                        gezugwu1@gmail.com
+                        </a>
+                    </div>
+                </div>
+                <div class="pt-3">
+                    <div class="font-lobster py-2">connect with me</div>
+                    <div class="flex gap-8">
+                        <div><a href="#twitter"><i class="text-lg lg:text-xl hover:text-blue-700 ri-twitter-x-line"></i></a></div>
+                        <div><a href="#github"><i class="text-lg lg:text-xl hover:text-blue-700 ri-github-fill"></i></a></i></div>
+                        <div><a href="#linkedin"><i class="text-lg lg:text-xl hover:text-blue-700 ri-linkedin-fill"></i></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact__form lg:w-1/2">
+                <div class="border__color border-2 border-gray-300 py-5 px-5
+                flex flex-col rounded-md">
+                    <div class="font-medium text-lg">Send us a message</div>
+                    <div class="mt-5">
+                        <form action="" class="flex flex-col">
+                            <input type="text"
+                            placeholder="Full name*"
+                            required
+                            class="bg-transparent border-b-2 border-gray-400
+                            p-1 w-[250px] font-medium px-3 rounded-md">
+
+                            <input type="email" 
+                            placeholder="Email*"
+                            required
+                            class="bg-transparent border-b-2 border-gray-400
+                            p-1 w-[250px] font-medium px-3 mt-5 rounded-md">
+
+                            <input type="text" 
+                            placeholder="Subject" 
+                            class="bg-transparent border-b-2 border-gray-400
+                            p-1 w-[250px] font-medium px-3 mt-5 rounded-md">
+
+                            <div class="flex flex-col mt-5 mb-4">
+                                <label for="textfield">Tell us more about your project*</label>
+                                <textarea required 
+                                class="bg-transparent border-2 border-gray-400
+                                p-1 font-medium px-3 mt-5 rounded-md">
+                                </textarea> 
+                            </div>
+                            
+                            <input type="submit"
+                            class="bluebutton py-1  w-[100px] border-2 border-blue-300
+                            flex items-center rounded-md font-semibold cursor-pointer">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------------------------swiperjs---------------------->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-----------------------------scroll reveal js---------------------->
+<script src="scrollreveal.min.js"></script>
+
+<!-----------------------------main.js---------------------->
+<script src="core.js"></script>
+
+  <!-----------------------------main.js---------------------->
+<script src="main.js"></script>
+</body>
+</html>

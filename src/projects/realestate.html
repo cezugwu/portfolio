@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+            bg-cover bg-center opacity-20 inset-0">
+    </div>
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+        bg-cover bg-center opacity-30 inset-0 rotate-180">
+    </div>
+    <div id="take" class="fixed bottom-[-100%] right-10 w-8 h-8 cursor-pointer
+         z-50 rounded-md text-2xl font-bold bg-transparent 
+         hover:bg-blue-400/70 transform duration-300 hover:-translate-y-1">
+        <a href="#" class="w-full h-full flex items-center justify-center">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
+
+    <header id="header" class="fixed top-0 w-full h-[70px] bg-gray-200 z-50">
+
+        <div class="contain w-full h-[70px] flex justify-between items-center">
+            <div class="lg:pr-8">
+                <h3 class="uppercase font-semibold font-play">Portfolio</h3>
+            </div>
+            <div class="text-xl lg:pl-5">
+                <i id="dark" class="ri-moon-fill cursor-pointer"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-----------------------------main info--------------------->
+    <section>
+        <div class="contain pt-10 relative">
+            <div>
+                <h2 class="font-funnel">Realestate Website (littlestate)</h2>
+            </div>
+            <div class="pt-5">
+                <h3 class="text-2xl font-semibold font-funnel">Overview</h3>
+            </div>
+            <div class="pt-2">
+                <p class="">
+                    <strong>Littlestate</strong> is a robust and scalable real estate web application designed to streamline property transactions by
+                    connecting buyers, renters, and property owners. Built with <strong>Django and React</strong>, it delivers a seamless user experience
+                    with advanced property management, secure authentication, and real-time communication.
+                </p>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Tech Stack</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>Backend</strong> – Django, Django REST Framework (DRF), PostgreSQL</div>
+                <div><strong>Frontend</strong> – React, Tailwind CSS, Redux</div>
+                <div><strong>Authentication</strong> – JWT Authentication</div>
+                <div><strong>Payment Integration</strong> – Flutterwave, Paystack & Paypal</div>
+                <div><strong>Hosting</strong> – (Mention deployment platform, e.g., Vercel, AWS)</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Key Features</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>Secure User Authentication</strong> – Implemented JWT-based authentication to ensure data security.</div>
+                <div><strong>Property Listings & Management</strong> – Landlords and agents can list, update, and manage properties effortless</div>
+                <div><strong>Advanced Search & Filteringt</strong> – Users can refine searches by location, price range, property type, and amenities.</div>
+                <div><strong>Property Reservations & Booking</strong> – Enables seamless reservations for rentals, hotels, and event spaces.</div>
+                <div><strong>Real-Time Communication</strong> – Integrated WebSockets for instant messaging between buyers and property owners</div>
+                <div><strong>Secure Payment Processing</strong> – Flutterwave, Paystack & Paypal API integration ensures smooth and reliable transactions.</div>
+                <div><strong>Admin Dashboard</strong> – Centralized control for managing users, property listings, transactions, and reports.</div>
+                <div><strong>Responsive & Optimized UI</strong> – A fully responsive design ensuring an excellent user experience across all devices.</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Challenges & Solutions</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside">
+                <div><strong>Efficient Property Data Handling – </strong>Optimized database queries and implemented pagination to enhance performance.</div>
+                <div><strong>Real-Time User Engagement – </strong>Integrated WebSockets for seamless live chat functionality.</div>
+                <div><strong>Data Security & Fraud Prevention – </strong> Implemented JWT authentication, CSRF protection, and role-based access control (RBAC).</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Links</h3>
+            </div>
+            <div class="pt-2">
+                <a href="#github" 
+                class="bluebutton2 inline-block bg-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition 
+                duration-300 font-semibold">
+                GitHub Repository
+                </a>
+            </div>
+            <div class="pt-3">
+                <a href="#live-demo" 
+                class="bluebutton inline-block border-2 border-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition
+                duration-300 font-semibold">
+                Live Demo
+                </a>
+            </div>
+
+            <div class="my-10">
+                <h2 class="font-funnel">Sample Images</h2>
+            </div>
+            <div class="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-[300px] w-[200px] bg-red-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-blue-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-gray-300 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-pink-200 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------------swiperjs---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-----------------------------scroll reveal js---------------------->
+    <script src="/src/scrollreveal.min.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/core.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/main.js"></script>
+</body>
+
+</html>

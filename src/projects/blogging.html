@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+            bg-cover bg-center opacity-20 inset-0">
+    </div>
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+        bg-cover bg-center opacity-30 inset-0 rotate-180">
+    </div>
+    <div id="take" class="fixed bottom-[-100%] right-10 w-8 h-8 cursor-pointer
+         z-50 rounded-md text-2xl font-bold bg-transparent 
+         hover:bg-blue-400/70 transform duration-300 hover:-translate-y-1">
+        <a href="#" class="w-full h-full flex items-center justify-center">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
+
+    <header id="header" class="fixed top-0 w-full h-[70px] bg-gray-200 z-50">
+
+        <div class="contain w-full h-[70px] flex justify-between items-center">
+            <div class="lg:pr-8">
+                <h3 class="uppercase font-semibold font-play">Portfolio</h3>
+            </div>
+            <div class="text-xl lg:pl-5">
+                <i id="dark" class="ri-moon-fill cursor-pointer"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-----------------------------main info--------------------->
+    <section>
+        <div class="contain pt-10 relative">
+            <div>
+                <h2 class="font-funnel">Blogging Platform (A Scalable Blogging Platform API)</h2>
+            </div>
+            <div class="pt-5">
+                <h3 class="text-2xl font-semibold font-funnel">Overview</h3>
+            </div>
+            <div class="pt-2">
+                <p class="">
+                    <strong>EMK-Blog API</strong> is a powerful and well-structured <strong>RESTful API</strong> designed for modern blogging platforms. 
+                    Built using <strong>Django REST Framework (DRF)</strong>, it provides secure authentication, efficient content management, 
+                    and role-based access control.The API ensures seamless interaction between frontend applications and backend services, 
+                    enabling users to create, manage, and engage with blog posts dynamically.
+                </p>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Tech Stack</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>Backend</strong> – Django, Django REST Framework (DRF), PostgreSQL</div>
+                <div><strong>Authentication</strong> – JWT Authentication</div>
+                <div><strong>API Standards:</strong> – RESTful API design</div>
+                <div><strong>Hosting & Deployment</strong> – Heroku</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Key Features</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>JWT Authentication</strong> – Secure user authentication using JSON Web Tokens (JWT).</div>
+                <div><strong>Post Management</strong> – Users can create, update, delete, and retrieve blog posts.</div>
+                <div><strong>Comment System Management</strong> – Users can engage through a structured comment system.</div>
+                <div><strong>Role-Based Access Control (RBAC)</strong> – Assigns permissions based on user roles (admin, editor, author, reader).</div>
+                <div><strong>RESTful API Design</strong> – Follows best practices for scalable and maintainable API architecture.</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Challenges & Solutions</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside">
+                <div><strong>Ensuring Secure Access – </strong>Implemented JWT authentication and permission classes to restrict access.</div>
+                <div><strong>Optimizing API Performance – </strong>Used query optimizations and caching for faster response times.</div>
+                <div><strong>Managing User Roles Efficiently – </strong> Integrated Django’s built-in permissions system for role-based access control.</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Links</h3>
+            </div>
+            <div class="pt-2">
+                <a href="#github" 
+                class="bluebutton2 inline-block bg-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition 
+                duration-300 font-semibold">
+                GitHub Repository
+                </a>
+            </div>
+            <div class="pt-3">
+                <a href="#live-demo" 
+                class="bluebutton inline-block border-2 border-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition
+                duration-300 font-semibold">
+                API Documentation
+                </a>
+            </div>
+
+            <div class="my-10">
+                <h2 class="font-funnel">Sample Images</h2>
+            </div>
+            <div class="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-[300px] w-[200px] bg-red-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-blue-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-gray-300 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-pink-200 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------------swiperjs---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-----------------------------scroll reveal js---------------------->
+    <script src="/src/scrollreveal.min.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/core.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    @apply scroll-smooth
+}
+
+html, body {
+    @apply overflow-x-hidden
+}
+
+.contain {
+    @apply max-w-full 
+    px-8
+    sm:px-10
+    md:px-16
+    lg:px-24
+    xl:px-28
+    mx-auto;
+}
+
+/*---------------h tags--------------*/
+
+h1 {
+    @apply text-2xl md:text-3xl lg:text-4xl
+}
+
+h2 {
+    @apply text-xl md:text-2xl lg:text-2xl
+}
+
+h3 {
+    @apply text-lg md:text-xl lg:text-2xl
+}
+
+
+/*---------------navbar animation--------------*/
+
+.nav span {
+    @apply absolute lg:-left-[10px] -top-[5px] -left-[5px]
+    w-[75px] h-[35px] -z-10 rounded-md
+    transition-all duration-200 delay-200
+}
+
+.nav li:nth-child(1):hover~span {
+    @apply lg:-left-[10px] lg:-top-[5px] -top-[5px]
+}
+.nav li:nth-child(2):hover~span {
+    @apply lg:left-[67px] lg:-top-[5px] top-[48px]
+}
+.nav li:nth-child(3):hover~span {
+    @apply lg:left-[148px] lg:-top-[5px] top-[102px]
+}
+.nav li:nth-child(4):hover~span {
+    @apply lg:left-[232px] lg:-top-[5px] top-[156px]
+}
+.nav li:nth-child(5):hover~span {
+    @apply lg:left-[310px] lg:-top-[5px] top-[210px]
+}
+.nav li:nth-child(6):hover~span {
+    @apply lg:left-[393px] lg:-top-[5px] top-[265px]
+}
+
+/*---------------section--------------*/
+
+section {
+    @apply py-16
+}
+
+/*---------------active--------------*/
+.active {
+    @apply text-blue-500
+}

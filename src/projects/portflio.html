@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="/src/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-200">
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+            bg-cover bg-center opacity-20 inset-0">
+    </div>
+    <div class="fixed w-full h-screen bg-[url('/assets/img/hero1.png')] 
+        bg-cover bg-center opacity-30 inset-0 rotate-180">
+    </div>
+    <div id="take" class="fixed bottom-[-100%] right-10 w-8 h-8 cursor-pointer
+         z-50 rounded-md text-2xl font-bold bg-transparent 
+         hover:bg-blue-400/70 transform duration-300 hover:-translate-y-1">
+        <a href="#" class="w-full h-full flex items-center justify-center">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+    </div>
+
+    <header id="header" class="fixed top-0 w-full h-[70px] bg-gray-200 z-50">
+
+        <div class="contain w-full h-[70px] flex justify-between items-center">
+            <div class="lg:pr-8">
+                <h3 class="uppercase font-semibold font-play">Portfolio</h3>
+            </div>
+            <div class="text-xl lg:pl-5">
+                <i id="dark" class="ri-moon-fill cursor-pointer"></i>
+            </div>
+        </div>
+
+    </header>
+
+    <!-----------------------------main info--------------------->
+    <section>
+        <div class="contain pt-10 relative">
+            <div>
+                <h2 class="font-funnel">Portfolio (A Modern & Interactive Portfolio Landing Page)</h2>
+            </div>
+            <div class="pt-5">
+                <h3 class="text-2xl font-semibold font-funnel">Overview</h3>
+            </div>
+            <div class="pt-2">
+                <p class="">
+                    <strong>Portfolio</strong> is a sleek and responsive personal portfolio landing page designed to showcase skills, projects, and
+                    achievements in an engaging and visually appealing manner. Built with modern web technologies, it features smooth
+                    animations, an intuitive user experience, and a dark mode toggle for enhanced accessibility.
+                </p>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Tech Stack</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>Frontend</strong> – Tailwind CSS, Html and JavaScript</div>
+                <div><strong>Hosting</strong> – AWS</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Key Features</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside space-y-1">
+                <div><strong>Responsive Design</strong> – Ensures a seamless user experience across all devices.</div>
+                <div><strong>Smooth Animations & Transitions</strong> – Integrated Framer Motion for fluid interactions.</div>
+                <div><strong>Dark Mode Integration</strong> – Users can toggle between light and dark themes.</div>
+                <div><strong>Intuitive Navigation</strong> –Well-structured layout with easy access to different sections.</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Challenges & Solutions</h3>
+            </div>
+            <div class="pt-2 list-disc list-inside">
+                <div><strong>Performance Optimization – </strong>Minimized animations for better load speed without sacrificing UI quality.</div>
+                <div><strong>Dark Mode Implementation – </strong>Used Tailwind’s dark mode support for effortless theme switching.</div>
+                <div><strong>Ensuring Accessibility – </strong>Applied proper color contrasts and keyboard navigation for usability.</div>
+            </div>
+            <div class="pt-10">
+                <h3 class="text-2xl font-semibold font-funnel">Links</h3>
+            </div>
+            <div class="pt-2">
+                <a href="#github" 
+                class="bluebutton2 inline-block bg-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-500/70 hover:-translate-y-1 transition 
+                duration-300 font-semibold">
+                GitHub Repository
+                </a>
+            </div>
+            <div class="pt-3">
+                <a href="#live-demo" 
+                class="bluebutton inline-block border-2 border-blue-300 py-2 px-4 rounded-lg 
+                shadow-md hover:bg-blue-300 hover:-translate-y-1 transition
+                duration-300 font-semibold">
+                Live Demo
+                </a>
+            </div>
+
+            <div class="my-10">
+                <h2 class="font-funnel">Sample Images</h2>
+            </div>
+            <div class="swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide h-[300px] w-[200px] bg-red-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-blue-200 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-gray-300 p-3"></div>
+                    <div class="swiper-slide h-[300px] w-[200px] bg-pink-200 p-3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-----------------------------swiperjs---------------------->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-----------------------------scroll reveal js---------------------->
+    <script src="/src/scrollreveal.min.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/core.js"></script>
+
+    <!-----------------------------main.js---------------------->
+    <script src="/src/main.js"></script>
+</body>
+
+</html>
