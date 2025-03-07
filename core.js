@@ -123,3 +123,5 @@ const darkMode = () => {
 }
 
 dark.addEventListener('click', darkMode);
+
+window.addEventListener('popstate', darkMode);
