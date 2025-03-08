@@ -967,10 +967,6 @@ video {
   width: 2rem;
 }
 
-.w-\[100px\]{
-  width: 100px;
-}
-
 .w-\[200px\]{
   width: 200px;
 }
@@ -2162,9 +2158,8 @@ video {
   background-color: transparent;
 }
 
-.bg-gray-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(107 114 128 / var(--tw-bg-opacity, 1));
+.bg-\[url\(\'\.\.\/img\/hero1\.png\'\)\]{
+  background-image: url('../img/hero1.png');
 }
 
 .bg-\[url\(\'\/assets\/img\/hero1\.png\'\)\]{
