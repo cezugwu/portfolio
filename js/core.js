@@ -133,7 +133,3 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener("pageshow", applyDarkMode);
 })
 
-
-
-
-window.addEventListener('popstate', darkMode);
